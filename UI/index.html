@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Store Manage App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/login.css" />
+    <!-- <script src="./assets/js/login.js"></script> -->
+</head>
+<body>
+   
+    <div class="login-form">
+        <h1>Store Manager - Login</h1>
+        <form class="login" method="POST" action=".">
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" placeholder="jane@doe.com" name="email"  required>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" placeholder="secret" name="passord" required>
+            </div>
+            <div class="login-button">
+                <input type="submit" value="Login">
+            </div>
+            <span class="no-account">If you don't have an account, Pease contact the adminstrator</span>
+        </form>
+    </div>
+    <script>
+           let loginForm = document.querySelector("form.login");
+           loginForm.addEventListener("submit", function(event){
+               event.preventDefault();
+               // login the user
+               window.location = "./attendant/addproducts.html";
+           })
+       
+    </script>
+</body>
+</html>
