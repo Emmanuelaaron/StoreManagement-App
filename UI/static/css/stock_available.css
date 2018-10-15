@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+
+body {
+    background-color: #673ab7;
+}
+
+.navigation {
+    background-color: #000;
+    height: 45px;
+    padding: 20px;
+    font-size: 13pt;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    padding: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li:last-child {
+    float: right;
+}
+
+/* Navigation */
+table {
+    text-align: center;
+}
+
+#table_header{
+    width: 100%;
+    font-size: 30px;
+    color: #e6cdcd;
+    background-color: rgb(43, 114, 96);
+
+}
+
+#catalog_number {
+    width: 15%;
+}
+
+#product {
+    width: 15%;
+}
+
+#quantity {
+    width: 20%;
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgb(53, 139, 139);
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(57, 84, 158);
+}
