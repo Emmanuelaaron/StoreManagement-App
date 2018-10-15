@@ -38,9 +38,8 @@ img {
 }
 
 .userdetails {
-    /* background: #8d4583; */
     padding: 18px;
-    width: 50%;
+    width: 20%;
 
 }
 
@@ -62,5 +61,21 @@ tbody tr:nth-child(odd){
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#id_number {
+    width: 10%;
+}
+
+#name {
+    width: 20%;
+}
+
+td {
+    height: 50px;
+}
+
+#row {
+    background-color: #3a8fb7;
 }
 
