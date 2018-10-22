@@ -1,6 +1,10 @@
-class models(object):
-    product_list = [{"sugar": 1000}, {"salt": 200}]
-    
-    def get_products():
+class Products():
+    product_list = []
+
+    def get_products(self):
         """Function returns list of products"""
-        return models.product_list
+        if len(self.product_list) == 0:
+            return "Nothing to get from the store"
+        else:
+            return self.product_list
+
