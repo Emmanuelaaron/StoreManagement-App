@@ -9,7 +9,13 @@ app = Flask(__name__)
 def get_products():
     return jsonify(products.get_products()), 200
 
+@app.route("/api/v1/products/", methods=['POST'])
+def add_product():
+    return jsonify(products.add_product()), 200
+    
+
 if __name__=='__main__':
+
 	app.run(debug=True)
 
     
