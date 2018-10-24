@@ -20,6 +20,5 @@ class Products():
             "pack_size": request.json["pack_size"]
         }
         self.product_list.append(product)
-        print ("Product sucessfully added to the product list")
         return product
 

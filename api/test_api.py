@@ -16,6 +16,10 @@ class test_run(TestCase):
         rp = self.client.get("/api/v1/products/")
         self.assertEqual(rp.status_code, 200)
 
+    def test_add_product(self):
+        rp = self.client.post("/api/v1/products")
+        self.assertNotEqual(rp.status_code, 201)
+
 
 
 

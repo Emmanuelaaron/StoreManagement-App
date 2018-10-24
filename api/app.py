@@ -11,7 +11,9 @@ def get_products():
 
 @app.route("/api/v1/products/", methods=['POST'])
 def add_product():
-    return jsonify(products.add_product()), 200
+    return jsonify({
+            "message": "Product sucessfully added to the product list"
+        }), 201
     
 
 if __name__=='__main__':
