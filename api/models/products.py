@@ -20,5 +20,11 @@ class Products():
             "pack_size": request.json["pack_size"]
         }
         self.product_list.append(product)
-        return product
+        return self.product_list
+
+    def get_specific_prod(self, catalog_no):
+        for dict_product in self.product_list:
+            return [dict_product for item in dict_product if catalog_no == dict_product[item]]
+          
+                            
 
