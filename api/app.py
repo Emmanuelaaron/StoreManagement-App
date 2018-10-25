@@ -7,6 +7,10 @@ products = Products()
 sales = Sales()
 app = Flask(__name__)
 
+@app.route("/")
+def index():
+    return "Emma's Storemanagement App"
+
 @app.route("/api/v1/products/", methods=['GET'])
 def get_products():
     return jsonify(products.get_products()), 200
@@ -26,6 +30,10 @@ def add_sales():
 @app.route("/api/v1/get_sales/", methods=['GET'])
 def get_sales():
     return jsonify(sales.get_sales()), 200
+
+@app.route("/api/v1/get_sales/<int:sales_id>", methods=['GET'])
+def get_specific_prod(sales_id):
+    return jsonify(sales.get_specific_sale(sales_id)), 200
     
 if __name__=='__main__':
 

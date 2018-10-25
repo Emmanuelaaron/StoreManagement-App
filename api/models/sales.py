@@ -26,3 +26,7 @@ class Sales():
             return "No sales yet"
         else:
             return ("No. of sales = "+  str(self.number_of_sales), "and the total price is "+ str(self.total_price))
+
+    def get_specific_sale(self, sales_id):
+        for dict_prod in self.sales_records:
+            return [dict_prod for key in dict_prod if sales_id == dict_prod[key]]
