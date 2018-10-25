@@ -17,8 +17,11 @@ class test_run(TestCase):
         self.assertEqual(rp.status_code, 200)
 
     def test_add_product(self):
-        rp = self.client.post("/api/v1/products")
-        self.assertNotEqual(rp.status_code, 201)
+        rp = self.client.post("/api/v1/products/", data={"product_name": "calcium", "catalog_no": 660, "price": 88, "pack_size": "2k/pk"})
+        self.assertEqual(rp.status_code, 201)
+
+    # def test_get_specific_prod(self):
+    #     rp = self.client.get
 
 
 
