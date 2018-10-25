@@ -21,7 +21,11 @@ def get_specific_product(catalog_no):
 
 @app.route("/api/v1/sales/", methods=['POST'])
 def add_sales():
-    return jsonify(sales.add_sales()), 200
+    return jsonify(sales.add_sales()), 201
+
+@app.route("/api/v1/get_sales/", methods=['GET'])
+def get_sales():
+    return jsonify(sales.get_sales()), 200
     
 if __name__=='__main__':
 
