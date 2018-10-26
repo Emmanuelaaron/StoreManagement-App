@@ -42,4 +42,4 @@ So far the project is live on [gh pages](https://emmanuelaaron.github.io/StoreMa
 Emmanuel Isabirye
 
 # Acknowledgement
-Great Thanks [John](https://github.com/SerryJohns/SLC-SEREMBA-JOHN-PAUL) who has supported me in the development of this project
+Great Thanks [John](https://github.com/SerryJohns/SLC-SEREMBA-JOHN-PAUL) and all my teammates who have supported me in the development of this project
