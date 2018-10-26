@@ -5,8 +5,8 @@ class test_run(TestCase):
     """class that test the code in the views folder"""
     def setUp(self):
         self.app = app
-        self.client = app.test_client(self)
-        product = {
+        self.client = app.test_client()
+        self.product = {
             "product_name": "sodium", 
             "catalog_no": 6756,
             "price": 898,
@@ -15,10 +15,14 @@ class test_run(TestCase):
     def test_get_product(self):
         rp = self.client.get("/api/v1/products/")
         self.assertEqual(rp.status_code, 200)
+        # self.assertIn(rp.data, "price")
 
     def test_add_product(self):
-        rp = self.client.post("/api/v1/products/", data={"product_name": "calcium", "catalog_no": 660, "price": 88, "pack_size": "2k/pk"})
-        self.assertEqual(rp.status_code, 201)
+        rp = self.client.post("/api/v1/products/",
+        data=json.dumps(self.product),
+        content_type='application/json')
+
+        self.assertTrue(rp.data)
 
     # def test_get_specific_prod(self):
     #     rp = self.client.get
