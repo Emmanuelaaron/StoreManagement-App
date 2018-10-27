@@ -19,7 +19,7 @@ git init
 git clone https://github.com/Emmanuelaaron/StoreManagement-App.git
 
 # Running the tests
-So far there are no tests to be run
+Install pytest on your local machine to run python tests
 
 # Deployment
 So far the project is live on [gh pages](https://emmanuelaaron.github.io/StoreManagement-App/UI/). It has been tested with google chrome and microsoft age. It is most likely not to work on any other browser other than these browsers because they have not been tested.
@@ -28,6 +28,8 @@ So far the project is live on [gh pages](https://emmanuelaaron.github.io/StoreMa
 * HTML
 * CSS
 * Python/Flask(APIs)
+* Postman
+* Heroku
 
 # Contributions
 * To contribute to this project, create a branch off the develop branch
@@ -40,4 +42,4 @@ So far the project is live on [gh pages](https://emmanuelaaron.github.io/StoreMa
 Emmanuel Isabirye
 
 # Acknowledgement
-Great Thanks [John](https://github.com/SerryJohns/SLC-SEREMBA-JOHN-PAUL) who has supported me in the development of this project
+Great Thanks [John](https://github.com/SerryJohns/SLC-SEREMBA-JOHN-PAUL) and all my teammates who have supported me in the development of this project

@@ -32,7 +32,7 @@ def get_sales():
     return jsonify(sales.get_sales()), 200
 
 @app.route("/api/v1/get_sales/<int:sales_id>", methods=['GET'])
-def get_specific_prod(sales_id):
+def get_specific_sale(sales_id):
     return jsonify(sales.get_specific_sale(sales_id)), 200
     
 if __name__=='__main__':

@@ -3,7 +3,7 @@
 
 }
 body {
-    background-color: #673ab7;
+    background-color: #f4f2f7;
 }
 
 .navigation{
@@ -43,7 +43,7 @@ li:last-child {
     justify-content: space-evenly; 
 }
 #user-details{
-    background: #d1c4e9;
+    background: #d2ced8;
     padding: 18px;
     flex:1;
     flex-basis: 50vw;
@@ -53,7 +53,7 @@ li:last-child {
     padding: 18px;
     flex: 1;
     margin-left: 5px;
-    background: #d1c4e9;
+    background: #d2ced8;
     flex-basis:50vw;
 }
 img{
