@@ -7,7 +7,7 @@ body {
 }
 
 .navigation{
-    background: #000;
+    background: rgb(218, 52, 52);
     height:45px;
     padding: 20px;
     font-size:13pt;
@@ -36,6 +36,7 @@ li:last-child {
 
 /* main container */
 .dashboard_details{
+    margin-top: 50px;
     display: flex;
     flex-flow: row nowrap;
     widows: 100%;
