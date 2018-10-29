@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #673ab7;
+    background-color: #f4f2f7;
 }
 
 .navigation{
@@ -49,11 +49,11 @@ table {
 }
 
 tbody tr:nth-child(even){
-    background-color: #3a8fb7
+    background-color: #94b3c2
 }
 
 tbody tr:nth-child(odd){
-    background-color: rgb(126, 209, 119);
+    background-color: rgb(161, 196, 157);
 }
 
 .minor_body {
@@ -76,6 +76,6 @@ td {
 }
 
 #row {
-    background-color: #3a8fb7;
+    background-color: #b8d1dd;
 }
 
