@@ -3,11 +3,11 @@
 }
 
 body {
-    background-color: #673ab7;
+    background-color: #f4f2f7;
 }
 
 .navigation {
-    background-color: #000;
+    background-color: rgb(218, 52, 52);
     height: 45px;
     padding: 20px;
     font-size: 13pt;
@@ -33,6 +33,7 @@ li:last-child {
 
 /* Navigation */
 table {
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -57,9 +58,9 @@ table {
 }
 
 tbody tr:nth-child(odd){
-    background-color: rgb(53, 139, 139);
+    background-color: rgb(158, 177, 177);
 }
 
 tbody tr:nth-child(even){
-    background-color: rgb(57, 84, 158);
+    background-color: rgb(143, 156, 192);
 }
